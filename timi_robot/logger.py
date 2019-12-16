@@ -11,7 +11,7 @@ class SensoroLogger(object):
 
     def log(self, err=None):
         if err:
-            msg = "error: {}, traceback: {}".format(err, traceback.format_exc())
+            msg = "traceback: {}\n\n error: {}".format(traceback.format_exc(), err)
         else:
             msg = "{}".format(traceback.format_exc())
 

@@ -17,5 +17,11 @@ logger.log(err={"code": 40010, "message": "参数错误!"})
 
 # 安装方式
 ```
-pip3 install timi-robot
+pip3 install timi-robot==1.0.1
 ```
+
+# 使用方法
+![图片](http://qiniucdn.timilong.com/timi-robot-1.0.1.png)
+
+# 使用效果
+![图片](http://qiniucdn.timilong.com/timi-robot.png)

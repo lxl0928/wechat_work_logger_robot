@@ -22,8 +22,10 @@ logger.log(err={"code": 40010, "message": "参数错误!"})
 
 # 使用方法
 http://qiniucdn.timilong.com/timi-robot-1.0.1.png
+
 ![图片](http://qiniucdn.timilong.com/timi-robot-1.0.1.png)
 
 # 使用效果
 http://qiniucdn.timilong.com/timi-robot.png
+
 ![图片](http://qiniucdn.timilong.com/timi-robot.png)

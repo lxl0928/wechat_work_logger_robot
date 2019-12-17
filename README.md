@@ -21,7 +21,7 @@ pip3 install timi-robot==1.0.1
 ```
 
 # 使用方法
-![图片](http://qiniucdn.timilong.com/timi-robot-1.0.1.png)
+http://qiniucdn.timilong.com/timi-robot-1.0.1.png
 
 # 使用效果
-![图片](http://qiniucdn.timilong.com/timi-robot.png)
+http://qiniucdn.timilong.com/timi-robot.png

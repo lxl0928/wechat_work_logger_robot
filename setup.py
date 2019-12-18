@@ -5,7 +5,7 @@ from setuptools import setup
 setup(
     name="timi-robot",
     version="1.0.2",
-    url='http://github.com/lxl0928/wechat_work_logger_robot',
+    url='https://github.com/lxl0928/wechat_work_logger_robot',
     author='Timi long',
     author_email='lixiaolong@smuer.cn',
     description='基于机器微信机器人实现的线上日志错误回调。',

@@ -9,10 +9,10 @@ class SensoroLogger(object):
     def __init__(self, url, phones):
         init_sdk(robot_url=url, mentioned_mobiles=phones)
 
-    def log(self, err=None):
+    async def log(self, err=None):
         if err:
             msg = "traceback: {}\n\n error: {}".format(traceback.format_exc(), err)
         else:
             msg = "{}".format(traceback.format_exc())
 
-        capture_message(text=msg)
+        await capture_message(text=msg)

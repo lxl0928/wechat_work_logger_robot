@@ -2,7 +2,10 @@
 
 import json
 import logging
-import requests
+import asyncio
+
+from tornado.httpclient import AsyncHTTPClient
+from tornado.httpclient import HTTPRequest
 
 
 class WechatWorkRobot(object):
@@ -10,8 +13,9 @@ class WechatWorkRobot(object):
     def __init__(self, robot_url, mentioned_mobiles):
         self.webhooks_url = robot_url
         self.mentioned = mentioned_mobiles if isinstance(mentioned_mobiles, list) else [mentioned_mobiles]
+        self.client = AsyncHTTPClient()
 
-    def send_requests(self, text):
+    async def send_requests(self, text):
         msg = {
             "msgtype": "text",
             "text": {
@@ -21,12 +25,14 @@ class WechatWorkRobot(object):
             }
         }
         logging.error(msg="{}".format(text))
-        requests.post(url=self.webhooks_url, data=json.dumps(msg))
+        request = HTTPRequest(url=self.webhooks_url, body=json.dumps(msg), method="POST")
+        await self.client.fetch(request)
 
 
 if __name__ == '__main__':
+    loop = asyncio.get_event_loop()
     robot = WechatWorkRobot(
-        robot_url="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=bb6c4d40-309d-4d7d-b585-95f6d876a206",
+        robot_url="http://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxx-xxxx-xxxx-xxx",
         mentioned_mobiles=["17623076764"]
     )
-    robot.send_requests(text={"code": 0, "message": "Ok."})
+    loop.run_until_complete(robot.send_requests(text={"code": 0, "message": "Ok."}))

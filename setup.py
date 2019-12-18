@@ -1,8 +1,10 @@
+# coding: utf-8
+
 from setuptools import setup
 
 setup(
     name="timi-robot",
-    version="1.0.1",
+    version="1.0.2",
     url='http://github.com/lxl0928/wechat_work_logger_robot',
     author='Timi long',
     author_email='lixiaolong@smuer.cn',
@@ -19,7 +21,7 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     extras_require={
-        "requests": ["requests"],
+        "requests": ["tornado"],
     },
-    install_requires=["requests==2.22.0"]
+    install_requires=["tornado==6.0.2"]
 )

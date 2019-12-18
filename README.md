@@ -9,15 +9,18 @@ pip3 install timi-robot==1.0.1
 # 使用方法
 ```python
 # coding: utf-8
-
+import asyncio
 from timi_robot import SensoroLoggerClient
 
-logger = SensoroLoggerClient(
-        url="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxx-xxxx-xxxx-xxxxxxxx",
-        phones=["17623076764"]
-)
-
-logger.log(err={"code": 40010, "message": "参数错误!"})
+if __name__ == '__main__':
+    loop = asyncio.get_event_loop() 
+    logger = SensoroLoggerClient(
+            url="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxx-xxxx-xxxx-xxxxxxxx",
+            phones=["17623076764"]
+    )
+    loop.run_until_complete(
+        logger.log(err={"code": 40010, "message": "参数错误!"})
+    )
 ```
 
 # 使用方法

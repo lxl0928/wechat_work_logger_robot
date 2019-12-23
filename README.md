@@ -23,10 +23,10 @@ if __name__ == '__main__':
     )
 ```
 
-# 使用方法
-http://qiniucdn.timilong.com/timi-robot-1.0.1.png
 
+# 使用方法
 ![图片](http://qiniucdn.timilong.com/timi-robot-1.0.1.png)
+
 
 # 使用效果
 http://qiniucdn.timilong.com/timi-robot.png

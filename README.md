@@ -25,6 +25,8 @@ if __name__ == '__main__':
 
 
 # 使用方法
+http://qiniucdn.timilong.com/timi-robot-1.0.1.png
+
 ![图片](http://qiniucdn.timilong.com/timi-robot-1.0.1.png)
 
 

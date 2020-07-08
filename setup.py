@@ -21,7 +21,7 @@ setup(
         'Programming Language :: Python :: 3.7',
     ],
     extras_require={
-        "requests": ["tornado"],
+        "requests": ["tornado", "request"],
     },
-    install_requires=["tornado==6.0.2"]
+    install_requires=["tornado==6.0.2", "requests==2.24.0"]
 )

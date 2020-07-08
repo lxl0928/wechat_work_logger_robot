@@ -23,12 +23,18 @@ if __name__ == '__main__':
     )
 ```
 
+
 # 使用方法
 http://qiniucdn.timilong.com/timi-robot-1.0.1.png
 
 ![图片](http://qiniucdn.timilong.com/timi-robot-1.0.1.png)
 
+
 # 使用效果
 http://qiniucdn.timilong.com/timi-robot.png
 
 ![图片](http://qiniucdn.timilong.com/timi-robot.png)
+
+
+# 说明
+上述模块是基于HTTP请求完成的数据传输及回调，在发生异常时，务必会阻塞Web服务器端的业务，请按自身业务，酌情考虑是否要使用此工具。

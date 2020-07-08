@@ -19,7 +19,7 @@ if __name__ == '__main__':
             phones=["17623076764"]
     )
     loop.run_until_complete(
-        logger.log(err={"code": 40010, "message": "参数错误!"})
+        logger.async_log(err={"code": 40010, "message": "参数错误!"})
     )
 ```
 

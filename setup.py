@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="timi-robot",
-    version="1.0.2",
+    version="1.1.0",
     url='https://github.com/lxl0928/wechat_work_logger_robot',
     author='Timi long',
     author_email='lixiaolong@smuer.cn',

@@ -5,8 +5,7 @@ import logging
 import asyncio
 import requests
 
-from tornado.httpclient import AsyncHTTPClient
-from tornado.httpclient import HTTPRequest
+from tornado.httpclient import AsyncHTTPClient, HTTPRequest
 
 
 class WechatWorkRobot(object):
